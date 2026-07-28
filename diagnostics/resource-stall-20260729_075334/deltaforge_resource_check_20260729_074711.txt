@@ -1,0 +1,155 @@
+=== BEFORE ===
+null
+null
+null
+
+
+
+
+null
+null
+null
+=== PROCESS ===
+pid=55268
+base=0xffffffffcae2e000
+off=0x5137c0 bytes_le=unreadable
+off=0x516640 bytes_le=unreadable
+off=0x526ed0 bytes_le=unreadable
+off=0x51d7f8 bytes_le=unreadable
+=== NETWORK ===
+http_proxy=null
+private_dns_mode=null
+private_dns_specifier=null
+[init.svc.adbd_proxy]: [running]
+[init.svc.mdnsd]: [running]
+[init.svc.sshd_proxy]: [running]
+[init.svc_debug_pid.adbd_proxy]: [1956]
+[init.svc_debug_pid.mdnsd]: [215]
+[init.svc_debug_pid.sshd_proxy]: [1963]
+[net.eth0.dns3]: [10.17.5.204]
+[ro.boottime.adbd_proxy]: [4986665331275632]
+[ro.boottime.mdnsd]: [4986644746685266]
+[ro.boottime.sshd_proxy]: [4986665353104957]
+[ro.container.net_dns.num]: [1]
+[ro.container.net_dns1]: [10.17.5.204]
+=== RELEVANT LOG ===
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:289)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:232)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:465)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:131)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:262)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:219)
+07-29 07:47:24.704 W/System.err(55268): 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:30)
+07-29 07:47:24.704 W/System.err(55268): 	at com.ihoc.mgpa.toolkit.util.HttpsUtil.fetch(SourceFile:64)
+07-29 07:47:24.704 E/TGPA_CloudControlChecker(55268): download cloud config request run io exception in times: 2
+07-29 07:47:25.497 E/GPMSDK  (55268): [2026-07-29 07:47:25 497] | Error | [GPMSDK] |55310| (:0)|| skip value : defLevel
+07-29 07:47:25.498 E/GPMSDK  (55268): [2026-07-29 07:47:25 498] | Error | [GPMSDK] |55310| (:0)|| skip value : defLevel
+07-29 07:47:25.789 V/PackageManager(  330): getApplicationInfo com.tencent.tmgp.dfm: Package{34f9563 com.tencent.tmgp.dfm}
+07-29 07:47:25.789 V/GetApkAbsPath(55268): getapkpath success, path:/data/app/~~z5U_1No7fsqc2cvRy8qEGg==/com.tencent.tmgp.dfm-Nf1dCMMvHQh9ID_8z4SZJg==/base.apk
+07-29 07:47:25.792 E/GCloud  (55268): [2026-07-29 07:47:25 792] | Error | [GCloud] |55310| (version_mgr_imp.cpp:77)|Init| UsrConfig[{
+07-29 07:47:25.792 E/GCloud  (55268):    "apollo_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 07:47:25.792 E/GCloud  (55268):       "m_apk_abspath" : "/data/app/~~z5U_1No7fsqc2cvRy8qEGg==/com.tencent.tmgp.dfm-Nf1dCMMvHQh9ID_8z4SZJg==/base.apk",
+07-29 07:47:25.792 E/GCloud  (55268):       "m_diff_config_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 07:47:25.792 E/GCloud  (55268):       "m_diff_temp_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 07:47:25.792 E/GCloud  (55268):       "m_nMaxDownloadSpeed" : 104857600
+07-29 07:47:25.792 E/GCloud  (55268):       "cdn_version_url" : null,
+07-29 07:47:25.792 E/GCloud  (55268):       "m_enable_cdn_getversion" : false,
+07-29 07:47:25.792 E/GCloud  (55268):       "m_server_url_list" : [ "download.500638030-1-1.gcloudsvcs.com" ],
+07-29 07:47:25.792 E/GCloud  (55268):       "m_version_json_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 07:47:25.792 E/GCloud  (55268):    "connector_type" : 2,
+07-29 07:47:25.792 E/GCloud  (55268):    "dns_mode_type" : 1,
+07-29 07:47:25.792 E/GCloud  (55268):    "log_error" : true,
+07-29 07:47:25.792 E/GCloud  (55268):    "log_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 07:47:25.792 E/GCloud  (55268):    "predownload_config" : {
+07-29 07:47:25.792 E/GCloud  (55268): [2026-07-29 07:47:25 792] | Error | [GCloud] |55310| (action_factory.cpp:221)|init| use Qts:[0]
+07-29 07:47:25.792 E/GCloud  (55268): [2026-07-29 07:47:25 792] | Error | [GCloud] |55310| (action_factory.cpp:278)|init| User_Data=
+07-29 07:47:25.792 E/GCloud  (55268): [2026-07-29 07:47:25 792] | Error | [GCloud] |55310| (action_factory.cpp:297)|init| apollopath=/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (patchdiff_paser_json.cpp:351)|get_vector_hashcode_from_json| Failed to open file [/fix_list.json]
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (gcloud_version_config.h:260)|load| get_vector_hashcode_from_json[] failed!
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (gcloud_version_config.h:134)|dump| mVersionGetMode=[1]
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:438)|init| connector_type=2
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:444)|init| dns_mode_type=1
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:346)|init| dolphin_engine_type=1
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:340)|init| m_bEnable_sni=0
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:268)|init| m_update_type=20
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:351)|init| max_concurrent_streams_=1
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:450)|init| use_launcher_mode=0
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (action_factory.cpp:290)|init| use Qts:[0]
+07-29 07:47:25.793 E/GCloud  (55268): [2026-07-29 07:47:25 793] | Error | [GCloud] |55310| (HttpNetwork.cpp:57)|set_http_curl_buffersize| set_http_curl_buffersize = 15360
+07-29 07:47:25.794 E/GCloud  (55268): [2026-07-29 07:47:25 794] | Error | [GCloud] |55310| (GcloudDolphinVersionAction.cpp:82)|DoAction| use connect type = 2
+07-29 07:47:25.794 E/GCloud  (55268): [2026-07-29 07:47:25 794] | Error | [GCloud] |55310| (GcloudDolphinVersionAction.cpp:87)|DoAction| use dns mode type 1
+07-29 07:47:25.795 E/GCloud  (55268): [2026-07-29 07:47:25 795] | Error | [GCloud] |55542| (GcloudDolphinVersionAction.cpp:220)|NormalConnectVersionSvr| NormalConnectVersionSvr Start...
+07-29 07:47:26.478 I/InputDispatcher(  330): Dropping event because there is no touchable window or gesture monitor at (0, 1179) in display 0.
+07-29 07:47:26.535 I/WifiService(  330): getConnectionInfo uid=10028
+07-29 07:47:26.539 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.540 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.540 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETUP_WIZARD, 10028): false
+07-29 07:47:26.540 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_MANAGED_PROVISIONING, 10028): false
+07-29 07:47:26.540 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_STACK, 10028): false
+07-29 07:47:26.540 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.MAINLINE_NETWORK_STACK, 10028): false
+07-29 07:47:26.543 I/WifiService(  330): getConnectionInfo uid=10028
+07-29 07:47:26.545 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.545 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.545 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETUP_WIZARD, 10028): false
+07-29 07:47:26.546 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_MANAGED_PROVISIONING, 10028): false
+07-29 07:47:26.546 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_STACK, 10028): false
+07-29 07:47:26.546 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.MAINLINE_NETWORK_STACK, 10028): false
+07-29 07:47:26.552 I/WifiService(  330): getConnectionInfo uid=10028
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETUP_WIZARD, 10028): false
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_MANAGED_PROVISIONING, 10028): false
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_STACK, 10028): false
+07-29 07:47:26.552 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.MAINLINE_NETWORK_STACK, 10028): false
+07-29 07:47:26.554 I/WifiService(  330): getConnectionInfo uid=10028
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETTINGS, 10028): false
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_SETUP_WIZARD, 10028): false
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_MANAGED_PROVISIONING, 10028): false
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.NETWORK_STACK, 10028): false
+07-29 07:47:26.555 V/WifiPermissionsWrapper(  330): getUidPermission(android.permission.MAINLINE_NETWORK_STACK, 10028): false
+07-29 07:47:26.853 E/GCloud  (55268): [2026-07-29 07:47:26 853] | Error | [GCloud] |55542| (GcloudDolphinVersionAction.cpp:469)|NormalConnectVersionSvr| Normal Version spend time:[1058]
+07-29 07:47:26.853 E/GCloud  (55268): [2026-07-29 07:47:26 853] | Error | [GCloud] |55542| (GcloudDolphinVersionAction.cpp:471)|NormalConnectVersionSvr| NormalConnectVersionSvr End...
+07-29 07:47:26.853 E/GCloud  (55268): [2026-07-29 07:47:26 853] | Error | [GCloud] |55542| (GcloudDolphinVersionAction.cpp:2144)|GetConfigUrls| GetConfigUrls failed.[url:] [addr:] [addr2:]
+07-29 07:47:26.853 E/GCloud  (55268): [2026-07-29 07:47:26 853] | Error | [GCloud] |55542| (GcloudDolphinVersionAction.cpp:216)|run| Run compelete!...
+07-29 07:47:26.937 E/GCloud  (55268): [2026-07-29 07:47:26 937] | Error | [GCloud] |55310| (gcloud_client_data_report.cpp:68)|StartReport| TDM report over!
+07-29 07:47:26.937 E/GCloud  (55268): [2026-07-29 07:47:26 937] | Error | [GCloud] |55310| (action_mgr.cpp:602)|OnReportFinish| OnReport data Finish!
+07-29 07:47:26.939 E/GCloud  (55268): [2026-07-29 07:47:26 939] | Error | [GCloud] |55310| (DownloadProcess.cpp:69)|GCloudSetDynamicDownloadMaxSpeed| opti final speed:104857600
+07-29 07:47:26.967 E/GCloud  (55268): [2026-07-29 07:47:26 967] | Error | [GCloud] |55310| (version_mgr_imp.cpp:77)|Init| UsrConfig[{
+07-29 07:47:26.967 E/GCloud  (55268):    "apollo_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 07:47:26.967 E/GCloud  (55268):       "cdn_version_url" : null,
+07-29 07:47:26.967 E/GCloud  (55268):       "m_enable_cdn_getversion" : false,
+07-29 07:47:26.967 E/GCloud  (55268):       "m_server_url_list" : [ "download.500638030-1-1.gcloudsvcs.com" ],
+07-29 07:47:26.967 E/GCloud  (55268):       "m_version_json_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 07:47:26.967 E/GCloud  (55268):    "connector_type" : 2,
+07-29 07:47:26.967 E/GCloud  (55268):       "enable_ios_bgdownload" : false,
+07-29 07:47:26.967 E/GCloud  (55268):       "filelist_info_json_file_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81/user_filelist.json",
+07-29 07:47:26.967 E/GCloud  (55268):       "m_file_extract_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 07:47:26.967 E/GCloud  (55268):       "m_ifs_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 07:47:26.967 E/GCloud  (55268):    "log_error" : true,
+07-29 07:47:26.967 E/GCloud  (55268):    "log_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/D
+07-29 07:47:26.967 E/GCloud  (55268):    "predownload_config" : {
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:221)|init| use Qts:[0]
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:278)|init| User_Data=
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:297)|init| apollopath=/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (patchdiff_paser_json.cpp:351)|get_vector_hashcode_from_json| Failed to open file [/fix_list.json]
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (gcloud_version_config.h:260)|load| get_vector_hashcode_from_json[] failed!
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (gcloud_version_config.h:134)|dump| mVersionGetMode=[1]
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:438)|init| connector_type=2
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:444)|init| dns_mode_type=1
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:346)|init| dolphin_engine_type=1
+07-29 07:47:26.968 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:340)|init| m_bEnable_sni=0
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 968] | Error | [GCloud] |55310| (action_factory.cpp:268)|init| m_update_type=21
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (action_factory.cpp:351)|init| max_concurrent_streams_=1
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (action_factory.cpp:450)|init| use_launcher_mode=0
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (action_factory.cpp:290)|init| use Qts:[0]
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (HttpNetwork.cpp:57)|set_http_curl_buffersize| set_http_curl_buffersize = 15360
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (GcloudDolphinVersionAction.cpp:82)|DoAction| use connect type = 2
+07-29 07:47:26.969 E/GCloud  (55268): [2026-07-29 07:47:26 969] | Error | [GCloud] |55310| (GcloudDolphinVersionAction.cpp:87)|DoAction| use dns mode type 1
+07-29 07:47:26.972 E/GCloud  (55268): [2026-07-29 07:47:26 972] | Error | [GCloud] |55549| (GcloudDolphinVersionAction.cpp:220)|NormalConnectVersionSvr| NormalConnectVersionSvr Start...
+07-29 07:47:27.158 D/su      (55557): 10073 /data/data/com.termux/files/usr/bin/bash executing 0 echo "=== PROCESS ==="; PID="$(pidof com.tencent.tmgp.dfm 2>/dev/null | awk "{print \$1}")"; echo "pid=${PID:-missing}"; if [ -n "$PID" ]; then MAPLINE="$(grep "libtersafe.so" "/proc/$PID/maps" 2>/dev/null | head -n 1)"; if [ -n "$MAPLINE" ]; then set -- $MAPLINE; RANGE="$1"; MAPOFF="$3"; START="${RANGE%%-*}"; BASE=$((0x$START-0x$MAPOFF)); printf "base=0x%x\n" "$BASE"; for OFF in 0x5137C0 0x516640 0x526ED0 0x51D7F8; do ADDR=$((BASE+OFF)); BYTES="$(dd if="/proc/$PID/mem" bs=1 skip="$ADDR" count=4 status=none 2>/dev/null | od -An -tx1 | tr -d " \n")"; printf "off=0x%x bytes_le=%s\n" "$OFF" "${BYTES:-unreadable}"; done; else echo "libtersafe map missing"; fi; fi; echo "=== NETWORK ==="; echo "http_proxy=$(settings get global http_proxy)"; echo "private_dns_mode=$(settings get global private_dns_mode)"; echo "private_dns_specifier=$(settings get global private_dns_specifier)"; getprop | grep -Ei "dns|proxy" | head -n 30; echo "=== RELEVANT LOG ==="; logc
+07-29 07:47:27.253 I/InputDispatcher(  330): Dropping event because there is no touchable window or gesture monitor at (0, 1179) in display 0.
+07-29 07:47:27.253 I/InputDispatcher(  330): Dropping event because there is no touchable window or gesture monitor at (0, 1179) in display 0.
+07-29 07:47:27.498 D/SettingsProvider(  330): ftrace:settings(method:GET_global, name:http_proxy)
+07-29 07:47:27.527 D/SettingsProvider(  330): ftrace:settings(method:GET_global, name:private_dns_mode)
+07-29 07:47:27.565 D/SettingsProvider(  330): ftrace:settings(method:GET_global, name:private_dns_specifier)
