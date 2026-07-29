@@ -1,0 +1,481 @@
+07-29 09:35:51.224  1199  1611 V Space   : s9_sock--Received msg: {"opType":"clipboard_copy","paste":true,"text":"TS=\"$(date +%Y%m%d_%H%M%S)\"; MARK=\"$(date '+%m-%d %H:%M:%S.000')\"; echo \"=== CURRENT ROUTE ===\"; tail -n 100 /data/local/tmp/mihomo.log | grep -Ei 'puffer|DIRECT|KDL'; am force-stop com.tencent.tmgp.dfm; screenrecord --time-limit 25 --bit-rate 4000000 \"/sdcard/Download/deltaforge_direct_$TS.mp4\" >/dev/null 2>&1 & REC=\"$!\"; sleep 1; am start -n com.tencent.tmgp.dfm/com.epicgames.ue4.SplashActivity; sleep 55; screencap -p \"/sdcard/Download/deltaforge_direct_$TS.png\"; logcat -b all -d -v threadtime -T \"$MARK\" | grep -Ei 'GCloud|puffer|GetConfigUrls|GetDownloadIpUri|OnTaskRunnerDead|HttpDownload|resource|Fatal signal|FATAL EXCEPTION' > \"/sdcard/Download/deltaforge_direct_$TS.log\"; echo \"=== MIHOMO ROUTES ===\"; tail -n 300 /data/local/tmp/mihomo.log | grep -Ei 'puffer|gcloud|wetest|DIRECT|KDL' | tail -n 100; echo \"=== GAME LOG ===\"; tail -n 120 \"/sdcard/Download/deltaforge_direct_$TS.log\"; echo \"录像=/sdcard/Download/deltaforge_direct_$TS.mp4\"; echo \"截图=/sdcard/Download/deltaforge_direct_$TS.png\"; echo \"日志=/sdcard/Download/deltaforge_direct_$TS.log\""}
+07-29 09:35:51.224  1199  1611 D InternalMessage  0001|: Received data: {"opType":"clipboard_copy","paste":true,"text":"TS=\"$(date +%Y%m%d_%H%M%S)\"; MARK=\"$(date '+%m-%d %H:%M:%S.000')\"; echo \"=== CURRENT ROUTE ===\"; tail -n 100 /data/local/tmp/mihomo.log | grep -Ei 'puffer|DIRECT|KDL'; am force-stop com.tencent.tmgp.dfm; screenrecord --time-limit 25 --bit-rate 4000000 \"/sdcard/Download/deltaforge_direct_$TS.mp4\" >/dev/null 2>&1 & REC=\"$!\"; sleep 1; am start -n com.tencent.tmgp.dfm/com.epicgames.ue4.SplashActivity; sleep 55; screencap -p \"/sdcard/Download/deltaforge_direct_$TS.png\"; logcat -b all -d -v threadtime -T \"$MARK\" | grep -Ei 'GCloud|puffer|GetConfigUrls|GetDownloadIpUri|OnTaskRunnerDead|HttpDownload|resource|Fatal signal|FATAL EXCEPTION' > \"/sdcard/Download/deltaforge_direct_$TS.log\"; echo \"=== MIHOMO ROUTES ===\"; tail -n 300 /data/local/tmp/mihomo.log | grep -Ei 'puffer|gcloud|wetest|DIRECT|KDL' | tail -n 100; echo \"=== GAME LOG ===\"; tail -n 120 \"/sdcard/Download/deltaforge_direct_$TS.log\"; echo \"录像=/sdcard/Download/deltaforge_direct_$TS.mp4\"; echo \"截图=/sdcard/Download/deltaforge_direct_$TS.png\"; echo \"日志=/sdcard/Download/deltaforge_direct_$TS.log\""}
+07-29 09:35:52.109   200   297 W ResourceManagerService: Ignoring request to add new resource entry with value <= 0
+07-29 09:35:53.076 13621 13621 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+07-29 09:35:53.077 13621 13621 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+07-29 09:35:53.082 13621 13621 I GCloudCore: PluginUtils try to load libgcloudcore.so
+07-29 09:35:53.084 13621 13621 I GCloudCore: [2026-07-29 09:35:53 084] | Info | [GCloudCore] |13621| (PluginManager.mm:32)|PluginManager| PluginManager::PluginManager():0xb4000076833ba670
+07-29 09:35:53.084 13621 13621 I GCloudCore: [2026-07-29 09:35:53 084] | Event | [GCloudCore] |13621| (PluginManager.mm:39)|PluginManager| LYP: version 1.6.04.3581,hash 12e8962c4655e82feecae6f8b168ffb25f55fbbe,version_tag GCLOUD_VERSION_GCLOUDCORE_1.6.04.3581
+07-29 09:35:53.084 13621 13621 I GCloudCore: SetNativePluginManager:b4000076833ba670
+07-29 09:35:53.084 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.084 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.084 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.084 13621 13621 I GCloudCore: [2026-07-29 09:35:53 084] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076833ba280, pluginName:GCloudCore, pluginVersion:1.6.04.3581
+07-29 09:35:53.086 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.086 13621 13621 I GCloud-TDM: get class :com/tdatamaster/tdm/GCloudPluginAdaptor
+07-29 09:35:53.086 13621 13621 I GCloud-TDM: get class method :getOlderPluginUtilsClassName
+07-29 09:35:53.086 13621 13621 I GCloud-TDM: get class name :com/tencent/gcloud/plugin/PluginUtils
+07-29 09:35:53.086 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.086 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.086 13621 13621 I GCloudCore: [2026-07-29 09:35:53 086] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633d8b88, pluginName:TDM, pluginVersion:1.40.001.2395
+07-29 09:35:53.086 13621 13621 I GCloudCore: [2026-07-29 09:35:53 086] | Info | [GCloudCore] |13621| (PluginManager.mm:94)|Install| PluginManager::Install Repeat, plugin:0xb4000076633d8b88, pluginName:TDM, pluginVersion:1.40.001.2395
+07-29 09:35:53.086 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.086 13621 13621 I GCloudCore: [2026-07-29 09:35:53 086] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633d8d68, pluginName:TSS, pluginVersion:7.7.049.57576
+07-29 09:35:53.193 13621 13621 I GCloudCoreUtils: try to load libgcloudcore.so for the first time
+07-29 09:35:53.193 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libPluginCrosCurl.so
+07-29 09:35:53.195 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.195 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.195 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.195 13621 13621 I GCloudCore: [2026-07-29 09:35:53 195] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633da5f8, pluginName:PluginCrosCurl, pluginVersion:1.0.000.1107
+07-29 09:35:53.195 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libTDataMaster.so
+07-29 09:35:53.195 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libCrashSightPlugin.so
+07-29 09:35:53.196 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.196 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.196 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.196 13621 13621 I GCloudCore: [2026-07-29 09:35:53 196] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633da538, pluginName:crashsight, pluginVersion:4.3.9.1073
+07-29 09:35:53.196 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libGPM.so
+07-29 09:35:53.198 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.198 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.198 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.198 13621 13621 I GCloudCore: [2026-07-29 09:35:53 198] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633dac88, pluginName:GPMSDK, pluginVersion:3.0.0202.1174
+07-29 09:35:53.198 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libHttpDnsPlugin.so
+07-29 09:35:53.202 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.202 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.202 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.202 13621 13621 I GCloudCore: [2026-07-29 09:35:53 202] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633da958, pluginName:HttpDNS, pluginVersion:1.3.04.300
+07-29 09:35:53.202 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libMSDKPIXCore.so
+07-29 09:35:53.206 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.206 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.206 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.206 13621 13621 I GCloudCore: [2026-07-29 09:35:53 206] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633da9b8, pluginName:MSDK, pluginVersion:5.43.102.7522
+07-29 09:35:53.207 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libPcdnTegTransSdk.so
+07-29 09:35:53.212 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/tencent/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.213 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.213 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.213 13621 13621 I GCloudCore: [2026-07-29 09:35:53 213] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633dabc0, pluginName:PcdnPlugin, pluginVersion:200028.0
+07-29 09:35:53.213 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libgcloud.so
+07-29 09:35:53.220 13621 13621 I GCloudLog: [13621] [GCloud.jni.cpp:115] [JNI_OnLoad] GCloud JNI Onload
+07-29 09:35:53.220 13621 13621 I         : gs_GetCachePtr jvm:0xb400007713393b50, className:com/gcore/gcloud/plugin/PluginUtils, methodName:GetNativePluginManager
+07-29 09:35:53.220 13621 13621 I GCloudCore: GetNativePluginManager nativePluginManager:b4000076833ba670
+07-29 09:35:53.220 13621 13621 I         : gs_GetGCloudPluginManager pluginManager:0xb4000076833ba670
+07-29 09:35:53.220 13621 13621 I GCloudCore: [2026-07-29 09:35:53 220] | Info | [GCloudCore] |13621| (PluginManager.mm:105)|Install| PluginManager::Install Success, plugin:0xb4000076633dd028, pluginName:GCloud, pluginVersion:2.23.00.1032
+07-29 09:35:53.220 13621 13621 I GCloudLog: [13621] [GCloud.jni.cpp:129] [JNI_OnLoad] GCloud JNI Onload end
+07-29 09:35:53.220 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libtersafe.so
+07-29 09:35:53.220 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libtgpa.so
+07-29 09:35:53.222 13621 13621 I TGPA    : gc version: GCLOUD_VERSION_TGPA_v4.1.0.2_common
+07-29 09:35:55.109 13621 13621 I GCloudCore: addObserverByName Name:com.itop.gcloud.msdk.core.lifecycle.PluginMSDKLifecycle
+07-29 09:35:55.109 13621 13621 I GCloudCore: GCloudAppLifecycleObserver.class.isAssignableFrom(clz) false
+07-29 09:35:55.109 13621 13621 I GCloudCore: addGenericObserverByName Success, observerName:com.itop.gcloud.msdk.core.lifecycle.PluginMSDKLifecycle, _genericobservers.size():1
+07-29 09:35:55.109 13621 13621 I GCloudCore: addObserverByName Name:com.tencent.gcloud.GCloudAppLifecycleListener
+07-29 09:35:55.109 13621 13621 I GCloudCore: GCloudAppLifecycleObserver.class.isAssignableFrom(clz) false
+07-29 09:35:55.109 13621 13621 I GCloudCore: addGenericObserverByName Success, observerName:com.tencent.gcloud.GCloudAppLifecycleListener, _genericobservers.size():2
+07-29 09:35:55.109 13621 13621 I GCloudCore: addObserverByName Name:com.tdatamaster.tdm.gcloud.lifecycle.PluginReportLifecycle
+07-29 09:35:55.109 13621 13621 I GCloudCore: GCloudAppLifecycleObserver.class.isAssignableFrom(clz) false
+07-29 09:35:55.109 13621 13621 I GCloudCore: addGenericObserverByName Success, observerName:com.tdatamaster.tdm.gcloud.lifecycle.PluginReportLifecycle, _genericobservers.size():3
+07-29 09:35:55.109 13621 13621 I GCloudCore: GCloudAppLifecycle onCreate
+07-29 09:35:55.111 13621 13621 I GCloudCore: [2026-07-29 09:35:55 111] | Info | [GCloudCore] |13621| (:0)|| [[GCloudCore]]AppPath:/data/user/0/com.tencent.tmgp.dfm/,CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/,DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/
+07-29 09:35:55.111 13621 13621 I GCloudCore: [2026-07-29 09:35:55 111] | Info | [GCloudCore] |13621| (:0)|| [[GCloudCore]]CreateMainHandler success:Handler (android.os.Handler) {e72a8c3}
+07-29 09:35:55.111 13621 13621 I GCloudCore: [2026-07-29 09:35:55 111] | Info | [GCloudCore] |13621| (:0)|| [URLRequest]URLRequest init
+07-29 09:35:55.112 13621 13621 I GCloudCore: [2026-07-29 09:35:55 112] | Info | [GCloudCore] |13621| (ABaseJni.cpp:444)|Java_com_gcore_abase_GCloudCore_nativeCreate| GCloud_nativeCreate g_bInited:0
+07-29 09:35:55.112 13621 13621 I GCloud  : SetPaths AppPath:/data/user/0/com.tencent.tmgp.dfm/, DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/, CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/
+07-29 09:35:55.112 13621 13621 D GCloudCore: [2026-07-29 09:35:55 112] | Debug | [GCloudCore] |13621| (IniFileImp.cpp:124)|Load| config file /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/RemoteConfig.config load 10 line
+07-29 09:35:55.112 13621 13621 I GCloudCore: [2026-07-29 09:35:55 112] | Info | [GCloudCore] |13621| (IniFileImp.cpp:81)|CIniFileImpl| load config file cost 356 us
+07-29 09:35:55.112 13621 13621 D GCloudCore: [2026-07-29 09:35:55 112] | Debug | [GCloudCore] |13621| (EncryptedIniFileImp.cpp:163)|Load| config file /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/RemoteConfig.config is exist
+07-29 09:35:55.113 13621 13621 I GCloudCore: [2026-07-29 09:35:55 113] | Info | [GCloudCore] |13621| (Logger.mm:451)|SetLogLevel| GCloudCore SetLogLevel:1
+07-29 09:35:55.113 13621 13621 I GCloudCore: [2026-07-29 09:35:55 113] | Info | [GCloudCore] |13621| (Logger.mm:458)|SetLogLevel| GCloudCore SetLogLevel finished, final LogLevel:1
+07-29 09:35:55.113 13621 13621 I GCloudCore: [2026-07-29 09:35:55 113] | Info | [GCloudCore] |13621| (Logger.mm:753)|Init| log init module GCloudCore, logMode 0, sync:1, use mmap:0, mmap cost 0 us
+07-29 09:35:55.113 13621 13621 I GCloudCore: [2026-07-29 09:35:55 113] | Info | [GCloudCore] |13621| (Logger.mm:146)|LogCreateThread| pthread_create RemoveOldLogFilesThread:504461540528
+07-29 09:35:55.115 13621 13621 I GCloudCore: Get Intent param: null
+07-29 09:35:55.115 13621 13621 I GCloudCore: [2026-07-29 09:35:55 115] | Info | [GCloudCore] |13621| (:0)|| [[GCloudCore]]GCloudCore Initialize ends
+07-29 09:35:55.116 13621 13621 I GCloudCore: [2026-07-29 09:35:55 115] | Info | [GCloudCore] |13621| (AFileLogger.cpp:179)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/GCloudSDKLog/GCloudCore/GCloudCore_2026072909.log
+07-29 09:35:55.116 13621 13621 I GCloudCore: genericobserver pos:0 className:com.itop.gcloud.msdk.core.lifecycle.PluginMSDKLifecycle
+07-29 09:35:55.116 13621 13621 I GCloudCoreUtils: GCloudUtils.loadLibrary:libMSDKPIXCore.so
+07-29 09:35:55.117 13621 13676 I GCloudCore: [2026-07-29 09:35:55 117] | Info | [GCloudCore] |13676| (:0)|| [NetworkChangeHelper]network available for wifi
+07-29 09:35:55.117 13621 13676 I GCloudCore: [2026-07-29 09:35:55 117] | Info | [GCloudCore] |13676| (:0)|| [NetworkChangeHelper]Network State change to TYPE_WIFI
+07-29 09:35:55.117 13621 13676 I GCloudCore: [2026-07-29 09:35:55 117] | Event | [GCloudCore] |13676| (ANetwork.cpp:172)|OnNetworkStateChanged| OnNetworkStateChanged to:2
+07-29 09:35:55.117 13621 13676 I GCloudCore: [2026-07-29 09:35:55 117] | Info | [GCloudCore] |13676| (:0)|| [[GCloudCore]]callbackFromJNI Main Thread:Thread[MainThread-UE4,5,main]Current Thread:Thread[ConnectivityThread,5,main]
+07-29 09:35:55.117 13621 13676 I GCloudCore: [2026-07-29 09:35:55 117] | Info | [GCloudCore] |13676| (:0)|| [[GCloudCore]]sendMsg before sendMessage:Handler (android.os.Handler) {e72a8c3}
+07-29 09:35:55.123 13621 13621 I GCloudCore: [2026-07-29 09:35:55 123] | Info | [GCloudCore] |13621| (Logger.mm:146)|LogCreateThread| pthread_create XLogThread:504425856176
+07-29 09:35:55.123 13621 13621 I GCloudCore: [2026-07-29 09:35:55 123] | Info | [GCloudCore] |13621| (Logger.mm:753)|Init| log init module MSDK, logMode 1, sync:0, use mmap:1, mmap cost 231 us
+07-29 09:35:55.123 13621 13621 I GCloudCore: [2026-07-29 09:35:55 123] | Info | [GCloudCore] |13621| (Logger.mm:451)|SetLogLevel| MSDK SetLogLevel:2
+07-29 09:35:55.123 13621 13621 I GCloudCore: [2026-07-29 09:35:55 123] | Info | [GCloudCore] |13621| (Logger.mm:458)|SetLogLevel| MSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:55.128 13621 13621 I GCloudCore: [2026-07-29 09:35:55 128] | Info | [GCloudCore] |13621| (Logger.mm:451)|SetLogLevel| MSDK SetLogLevel:2
+07-29 09:35:55.128 13621 13621 I GCloudCore: [2026-07-29 09:35:55 128] | Info | [GCloudCore] |13621| (Logger.mm:458)|SetLogLevel| MSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:55.134 13621 13621 I GCloudCore: genericobserver pos:1 className:com.tencent.gcloud.GCloudAppLifecycleListener
+07-29 09:35:55.135 13621 13621 I GCloud  : GCloud()
+07-29 09:35:55.142 13621 13621 I GCloud  : AppPath:/data/user/0/com.tencent.tmgp.dfm/,CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/,DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/
+07-29 09:35:55.142 13621 13621 I GCloud  : CreateMainHandler success:Handler (android.os.Handler) {e5e3604}
+07-29 09:35:55.142 13621 13621 I GCloud  : GCloud Init
+07-29 09:35:55.142 13621 13621 I GCloudLog: [13621] [GCloud.jni.cpp:135] [Java_com_gsdk_gcloud_GCloud_gcloudInit] gcloudInit :g_pJavaVm:0x0, env:0xb400007703389010, g_JniObj:0x0, context:0x7fc64ea78c, obj:0x7fc64ea788
+07-29 09:35:55.142 13621 13621 I GCloud  : SetPaths AppPath:/data/user/0/com.tencent.tmgp.dfm/, DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/, CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/
+07-29 09:35:55.142 13621 13621 I GCloud  : QRCoce Init
+07-29 09:35:55.142 13621 13621 I GCloudLog: [13621] [GCloud.jni.cpp:224] [Java_com_gsdk_gcloud_qr_QRCodeAPI_qrCodeInit] apolloQR JNI QRCodeAPI qrCodeInit
+07-29 09:35:55.144 13621 13621 I GCloudCore: genericobserver pos:2 className:com.tdatamaster.tdm.gcloud.lifecycle.PluginReportLifecycle
+07-29 09:35:55.147 13621 13676 W GCloudLog: [13676] [Network.cpp:168] [OnNetworkStateChanged] OnNetworkStateChanged to:2
+07-29 09:35:55.147 13621 13676 I GCloudLog: [13676] [GTargetBase_Android.cpp:34] [GCloudPerformSelectorOnMainThread] performOnMainThread begin
+07-29 09:35:55.147 13621 13676 I GCloud  : callbackFromJNI Main Thread:Thread[MainThread-UE4,5,main]Current Thread:Thread[ConnectivityThread,5,main]
+07-29 09:35:55.147 13621 13676 I GCloud  : sendMsg before sendMessage:Handler (android.os.Handler) {e5e3604}
+07-29 09:35:55.147 13621 13621 I TDM     : [TDM][I][2026-07-29 09:35:55 147][0x78eea80390][(TDataMasterCommon.cpp:528) LogTDMBuildOptions] : _TDM_GCLOUD_
+07-29 09:35:55.147 13621 13621 I TDM     : [TDM][I][2026-07-29 09:35:55 147][0x78eea80390][(TDataMasterCommon.cpp:529) LogTDMBuildOptions] : GCLOUD_VERSION_TDM_1.40.001.2395
+07-29 09:35:55.155 13621 13621 I GCloudCore: [2026-07-29 09:35:55 155] | Info | [GCloudCore] |13621| (PluginManager.jni.cpp:104)|Java_com_gcore_gcloud_plugin_PluginUtils_nativeStartup| Java_com_gcore_gcloud_plugin_PluginUtils_nativeStartup
+07-29 09:35:55.155 13621 13621 I GCloudCore: [2026-07-29 09:35:55 155] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:CONNECTOR
+07-29 09:35:55.155 13621 13621 I GCloudCore: [2026-07-29 09:35:55 155] | Info | [GCloudCore] |13621| (GCloudCoreInnerPlugin.mm:129)|OnStartup| GCloudCoreInnerPlugin::OnStartup
+07-29 09:35:55.155 13621 13621 I GCloudCore: [2026-07-29 09:35:55 155] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:COREREPORT
+07-29 09:35:55.156 13621 13621 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:GTRACE
+07-29 09:35:55.156 13621 13621 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:REMOTECONFIG
+07-29 09:35:55.156 13621 13621 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:CONFIGFILE
+07-29 09:35:55.156 13621 13621 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13621| (OperationQueue.cpp:24)|GetInstance| Operation mode is 2
+07-29 09:35:55.156 13621 13621 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13621| (OperationQueuePool.cpp:82)|OperationQueuePool| OperationQueuePool minThreadNum 3, maxThreadNum 6, shrinkInterval 5, shrinkStep 2, stretchStep 1
+07-29 09:35:55.156 13621 13686 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13686| (GCloudCoreInnerPlugin.mm:276)|onStartGTraceClient| GCloudCoreInnerPlugin::onStartGTraceClient begin
+07-29 09:35:55.156 13621 13686 I GCloudCore: [2026-07-29 09:35:55 156] | Info | [GCloudCore] |13686| (TraceIdManager.cpp:40)|TraceIdManager| [GTrace] TraceConfig LowerLimit:5, UpperLimit:60, RequestCount:30, StoreFileName:/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/traceids.store
+07-29 09:35:55.157 13621 13686 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13686| (TraceService.mm:91)|initTargetList| [GTrace] TargetMode:1
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (AFileLogger.cpp:179)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/GCloudSDKLog/GPMSDK/GPMSDK_2026072909.xlog
+07-29 09:35:55.157 13621 13686 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13686| (TraceService.mm:40)|TraceService| [GTrace] GTraceClient IsEnabled:0
+07-29 09:35:55.157 13621 13686 I GCloudCore: [2026-07-29 09:35:55 157] | Event | [GCloudCore] |13686| (GCloudCoreInnerPlugin.mm:303)|onStartGTraceClient| [GTrace] onStartGTraceClient GTraceClient is disabled
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (AFileLogger.cpp:179)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/GCloudSDKLog/GPMSDK/GPMSDK_2026072909.xlog
+07-29 09:35:55.157 13621 13686 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13686| (GCloudCoreInnerPlugin.mm:306)|onStartGTraceClient| GCloudCoreInnerPlugin::onStartGTraceClient end
+07-29 09:35:55.157 13621 13686 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13686| (Operation.cpp:86)|~ObjectOperation| ObjectOperation::~ObjectOperation():0xb4000076933e22d0
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (AFileLogger.cpp:179)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/GCloudSDKLog/GPMSDK/GPMSDK_2026072909.xlog
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (Logger.mm:146)|LogCreateThread| pthread_create XLogThread:504283167920
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (Logger.mm:753)|Init| log init module GPMSDK, logMode 1, sync:0, use mmap:1, mmap cost 740 us
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (Logger.mm:451)|SetLogLevel| GPMSDK SetLogLevel:2
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (Logger.mm:458)|SetLogLevel| GPMSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:GETHOSTBYNAME
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:ACCOUNT
+07-29 09:35:55.157 13621 13621 I GCloudCore: [2026-07-29 09:35:55 157] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:PcdnPlugin
+07-29 09:35:55.158 13621 13621 I GCloudCore: [2026-07-29 09:35:55 158] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:CurlFuncQuery
+07-29 09:35:55.158 13621 13621 I GCloudCore: [2026-07-29 09:35:55 158] | Info | [GCloudCore] |13621| (ServiceRegister.cpp:21)|Register| ServiceRegister::Register serviceName:REPORT
+07-29 09:35:55.158 13621 13621 I GCloudCore: [2026-07-29 09:35:55 158] | Info | [GCloudCore] |13621| (PluginManager.jni.cpp:110)|Java_com_gcore_gcloud_plugin_PluginUtils_nativePostStartup| Java_com_gcore_gcloud_plugin_PluginUtils_nativePostStartup
+07-29 09:35:55.158 13621 13621 W GCloudLog: [13621] [GCloudLog.cpp:47] [Initialize] Log Type:2
+07-29 09:35:55.159 13621 13621 I GCloudCore: [2026-07-29 09:35:55 159] | Info | [GCloudCore] |13621| (Logger.mm:753)|Init| log init module GCloud, logMode 0, sync:1, use mmap:0, mmap cost 0 us
+07-29 09:35:55.159 13621 13621 W GCloud  : [2026-07-29 09:35:55 159] | Warning | [GCloud] |13621| (GCloudReport.cpp:42)|Initialize| Report Type:2
+07-29 09:35:55.159 13621 13621 I GCloudCore: [2026-07-29 09:35:55 159] | Info | [GCloudCore] |13621| (AFileLogger.cpp:179)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/cache/GCloudSDKLog/GCloud/GCloud_2026072909.log
+07-29 09:35:55.159 13621 13621 W GCloud  : [2026-07-29 09:35:55 159] | Warning | [GCloud] |13621| (GCloudConfig.cpp:46)|Initialize| Config Type:2
+07-29 09:35:55.159 13621 13621 I GCloud  : [2026-07-29 09:35:55 159] | Info | [GCloud] |13621| (OneSDKPlugin.mm:45)|OnPostStartup| OneSDKPlugin::OnPostStartup
+07-29 09:35:55.159 13621 13621 I GCloudCore: [2026-07-29 09:35:55 159] | Info | [GCloudCore] |13621| (GCloudCoreInnerPlugin.mm:176)|OnPostStartup| GCloudCoreInnerPlugin::OnPostStartup
+07-29 09:35:55.165 13621 13621 I GCloudCore: [2026-07-29 09:35:55 165] | Info | [GCloudCore] |13621| (IniFileImp.cpp:81)|CIniFileImpl| load config file cost 225 us
+07-29 09:35:55.171 13621 13621 I GCloudCore: get context from activity
+07-29 09:35:55.171 13621 13684 I GCloudCore: [2026-07-29 09:35:55 171] | Info | [GCloudCore] |13684| (ConfigureImpl.cpp:305)|Request| Request config, channel: 0, openID: ,  ruleID: 0
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (ConfigureImpl.cpp:316)|Request| comParams: {"app_ver":"1.201.37114.81.2019","bid":"com.tencent.tmgp.dfm","cid":"0","date":"2026-07-29","did":"g_d945cbec580d2411ef9fc7f78f506dc3","gid":"500638030","mfrs":"ForbiddenGetBrand","mtype":"ForbiddenGetModel","oid":"","os":"Android","os_ver":"12","sdk_list":{"GCloud":{"ver":"2.23.00.1032"},"GCloudCore":{"ver":"1.6.04.3581"},"GPMSDK":{"ver":"3.0.0202.1174"},"HttpDNS":{"ver":"1.3.04.300"},"MSDK":{"ver":"5.43.102.7522"},"PcdnPlugin":{"ver":"200028.0"},"PluginCrosCurl":{"ver":"1.0.000.1107"},"TDM":{"ver":"1.40.001.2395"},"TSS":{"ver":"7.7.049.57576"},"crashsight":{"ver":"4.3.9.1073"}},"spid":""}
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (ConfigureImpl.cpp:332)|Request| RemoteConfig host:https://cloudctrl.gcloud.qq.com, url: [https://cloudctrl.gcloud.qq.com/cfgpush/getConfig?com_params=%7B%22app_ver%22%3A%221.201.37114.81.2019%22%2C%22bid%22%3A%22com.tencent.tmgp.dfm%22%2C%22cid%22%3A%220%22%2C%22date%22%3A%222026-07-29%22%2C%22did%22%3A%22g_d945cbec580d2411ef9fc7f78f506dc3%22%2C%22gid%22%3A%22500638030%22%2C%22mfrs%22%3A%22ForbiddenGetBrand%22%2C%22mtype%22%3A%22ForbiddenGetModel%22%2C%22oid%22%3A%22%22%2C%22os%22%3A%22Android%22%2C%22os_ver%22%3A%2212%22%2C%22sdk_list%22%3A%7B%22GCloud%22%3A%7B%22ver%22%3A%222.23.00.1032%22%7D%2C%22GCloudCore%22%3A%7B%22ver%22%3A%221.6.04.3581%22%7D%2C%22GPMSDK%22%3A%7B%22ver%22%3A%223.0.0202.1174%22%7D%2C%22HttpDNS%22%3A%7B%22ver%22%3A%221.3.04.300%22%7D%2C%22MSDK%22%3A%7B%22ver%22%3A%225.43.102.7522%22%7D%2C%22PcdnPlugin%22%3A%7B%22ver%22%3A%22200028.0%22%7D%2C%22PluginCrosCurl%22%3A%7B%22ver%22%3A%221.0.000.1107%22%7D%2C%22TDM%22%3A%7B%22ver%22%3A%
+07-29 09:35:55.172 13621 13684 I GCloudCore: 221.40.001.2395%22%7D%2C%22TSS%22%3A%7B%22ver%22%3A%227.7.049.57576%22%7D%2C%22crashsight%22%3A%7B%22ver%22%3A%224.3.9.1073%22%7D%7D%2C%22spid%22%3A%22%22%7D%0A&biz_params=%7B%22rule_id%22%3A0%7D%0A&r=1785288955], maxRetryCount 3, retryCount 3
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (CurlManager.cpp:44)|isUsePluginCurl| HttpMode(0=Native,2=CCurl) is (0)
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (ConfigHttpTaskImp.cpp:77)|NativeGet| NativeGet
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (UrlRequest.cpp:126)|Initialize| UrlRequest::Initialize https://cloudctrl.gcloud.qq.com/cfgpush/getConfig?com_params=%7B%22app_ver%22%3A%221.201.37114.81.2019%22%2C%22bid%22%3A%22com.tencent.tmgp.dfm%22%2C%22cid%22%3A%220%22%2C%22date%22%3A%222026-07-29%22%2C%22did%22%3A%22g_d945cbec580d2411ef9fc7f78f506dc3%22%2C%22gid%22%3A%22500638030%22%2C%22mfrs%22%3A%22ForbiddenGetBrand%22%2C%22mtype%22%3A%22ForbiddenGetModel%22%2C%22oid%22%3A%22%22%2C%22os%22%3A%22Android%22%2C%22os_ver%22%3A%2212%22%2C%22sdk_list%22%3A%7B%22GCloud%22%3A%7B%22ver%22%3A%222.23.00.1032%22%7D%2C%22GCloudCore%22%3A%7B%22ver%22%3A%221.6.04.3581%22%7D%2C%22GPMSDK%22%3A%7B%22ver%22%3A%223.0.0202.1174%22%7D%2C%22HttpDNS%22%3A%7B%22ver%22%3A%221.3.04.300%22%7D%2C%22MSDK%22%3A%7B%22ver%22%3A%225.43.102.7522%22%7D%2C%22PcdnPlugin%22%3A%7B%22ver%22%3A%22200028.0%22%7D%2C%22PluginCrosCurl%22%3A%7B%22ver%22%3A%221.0.000.1107%22%7D%2C%22TDM%22%3A%7B%22ver%22%3A%221.40.001.2395%22%7D%2C%22TSS%22%
+07-29 09:35:55.172 13621 13684 I GCloudCore: 3A%7B%22ver%22%3A%227.7.049.57576%22%7D%2C%22crashsight%22%3A%7B%22ver%22%3A%224.3.9.1073%22%7D%7D%2C%22spid%22%3A%22%22%7D%0A&biz_params=%7B%22rule_id%22%3A0%7D%0A&r=1785288955 20000
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (UrlRequest.cpp:183)|SetDelegate| UrlRequest::SetDelegate listener 0xb4000076c3407278, dataTask 0xb4000076c3407230
+07-29 09:35:55.172 13621 13684 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13684| (UrlRequest.cpp:242)|Get| UrlRequest::Get
+07-29 09:35:55.172 13621 13621 I GCloudCore: registerBugly finish
+07-29 09:35:55.172 13621 13621 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13621| (GCloudCoreReportService.cpp:62)|CreateEvent| GCloudCoreReportService::CreateEvent, dataType : 3, srcID : 2000, eventName : GCloudSDK_Versions
+07-29 09:35:55.172 13621 13696 I GCloudCore: [2026-07-29 09:35:55 172] | Info | [GCloudCore] |13696| (AThreadBase.cpp:91)|onThreadProc| Thread: CThreadBase: OnThreadProc, 0xb4000077233b98b0
+07-29 09:35:55.173 13621 13621 I GCloudCore: [2026-07-29 09:35:55 173] | Info | [GCloudCore] |13621| (:0)|| [GCloudCore]GCloudAppLifecycle onCreate ends
+07-29 09:35:55.177 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 177] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:548 |PrintMacroDef| Macro define:WchatService 3D-Voice 
+07-29 09:35:55.177 13621 13621 I GVoiceAndroidLog: GCloudVoice Version in java code: 4.4.1.131802498
+07-29 09:35:55.181 13621 13621 I GVoiceAndroidLog: GCloudVoice::max music 15max call =  5
+07-29 09:35:55.183 13621 13621 I GVoiceAndroidLog: storageCfgPath: /storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/GCloudVoice/config.json
+07-29 09:35:55.192   330 19435 I MediaFocusControl: requestAudioFocus() from uid/pid 10071/13621 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@3e949cccom.gcloudsdk.apollo.ApolloVoiceDeviceMgr$AudioFocusChangeListener@e98c415 callingPack=com.tencent.tmgp.dfm req=1 flags=0x0 sdk=34
+07-29 09:35:55.192 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 192] | Info | [GCloudVoice] |13621| GcloudVoiceEngineHelper.cpp:1562 |Java_com_gcloudsdk_gcloud_voice_GCloudVoiceEngineHelper_AndroidInit| Java_com_gcloudsdk_gcloud_voice_GCloudVoiceEngineHelper_AndroidInit
+07-29 09:35:55.192 13621 13621 I GVoiceAndroidLog: Read Dynamic: /data/user/0/com.tencent.tmgp.dfm/files/com.gcloudsdk.gcloud.gvoice/config/gvoice.cfg
+07-29 09:35:55.222 13621 13684 I GCloudCore: [2026-07-29 09:35:55 222] | Info | [GCloudCore] |13684| (AThreadBase.cpp:218)|Start| Thread: CThreadBase: Start:0xb4000077233b98b0
+07-29 09:35:55.222 13621 13684 I GCloud  : after Thread: CThreadBase: Start m_bThreadRun.Set(true)
+07-29 09:35:55.223 13621 13684 I GCloudCore: [2026-07-29 09:35:55 223] | Info | [GCloudCore] |13684| (AThreadBase.cpp:263)|Resume| CThreadBase::Resume
+07-29 09:35:55.223 13621 13696 I GCloudCore: [2026-07-29 09:35:55 222] | Info | [GCloudCore] |13696| (AThreadBase.cpp:106)|onThreadProc| Thread: CThreadBase: OnThreadProc m_bThreadRun is false
+07-29 09:35:55.223 13621 13684 I GCloud  : after Thread: CThreadBase::Resume m_bPause.Set(false)
+07-29 09:35:55.223 13621 13684 I GCloud  : after Thread: CThreadBase::Resume m_PauseEvent.Set()
+07-29 09:35:55.223 13621 13684 I GCloudCore: [2026-07-29 09:35:55 223] | Info | [GCloudCore] |13684| (Operation.cpp:86)|~ObjectOperation| ObjectOperation::~ObjectOperation():0xb4000076933e3f50
+07-29 09:35:55.243 13621 13696 I GCloudCore: [2026-07-29 09:35:55 243] | Info | [GCloudCore] |13696| (AThreadBase.cpp:123)|onThreadProc| Thread: CThreadBase: OnThreadProc after start
+07-29 09:35:55.243 13621 13696 I GCloudCore: [2026-07-29 09:35:55 243] | Info | [GCloudCore] |13696| (AThreadBase.cpp:130)|onThreadProc| Thread: CThreadBase: OnThreadProc before Running
+07-29 09:35:55.266 13621 13692 I GCloudCore: [2026-07-29 09:35:55 266] | Info | [GCloudCore] |13692| (Logger.mm:451)|SetLogLevel| MSDK SetLogLevel:2
+07-29 09:35:55.266 13621 13692 I GCloudCore: [2026-07-29 09:35:55 266] | Info | [GCloudCore] |13692| (Logger.mm:458)|SetLogLevel| MSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:55.266 13621 13692 I GCloudCore: [2026-07-29 09:35:55 266] | Info | [GCloudCore] |13692| (Logger.mm:451)|SetLogLevel| MSDK SetLogLevel:2
+07-29 09:35:55.266 13621 13692 I GCloudCore: [2026-07-29 09:35:55 266] | Info | [GCloudCore] |13692| (Logger.mm:458)|SetLogLevel| MSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:55.305 13621 13692 I GCloudCore: [2026-07-29 09:35:55 305] | Info | [GCloudCore] |13692| (GCloudCoreReportService.cpp:62)|CreateEvent| GCloudCoreReportService::CreateEvent, dataType : 3, srcID : 2003, eventName : http
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:144 |GetAndroidVoiceBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:182 |GetAndroid3DBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:220 |GetAndroidDAFXBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:297 |GetAndroidVPBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:411 |GetAndroidGvAiEncBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:449 |GetAndroidGvAiDecBinPath| path_str jstring get Null
+07-29 09:35:55.411 13621 13621 I GVoiceAndroidLog: Read config file from: GCloudVoice/config.json
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_config.cpp:2401 |GetJsonStringValue| The keyNode voiceMessageUrl is NULL
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:172 |Update| add candidate voice url:udp://cn.voice.gcloudcs.com:10001
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 6, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_remote_config.cpp:548 |SetUrl| SetUrl url is https://idcconfig.gcloudsdk.com:443
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 4, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_httprequest_android.inc:94 |SetDelegate| AVHttpRequest::SetDelegate
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| av_httprequest_android.inc:97 |SetDelegate| requestCls_ or request_ or env_ is NULL
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| ThreadLogFile.cpp:1536 |SetLogReportUrl| SetLogReportUrl https://tglog.gcloudsdk.com:443
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 3, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:8702 |SetVoiceReportUrl| SetReportUrl url: https://harmony.voice.gcloudsdk.com:443
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:192 |SetRptUrl| strRPTURL https://harmony.voice.gcloudsdk.com:443/report_record
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:202 |SetRptQueryUrl| strRPTQueryURL https://harmony.voice.gcloudsdk.com:443/report_query
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:192 |SetRptUrl| strRPTURL https://harmony.voice.gcloudsdk.com:443/report_record
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:202 |SetRptQueryUrl| strRPTQueryURL https://harmony.voice.gcloudsdk.com:443/report_query
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:192 |SetRptUrl| strRPTURL https://harmony.voice.gcloudsdk.com:443/report_record
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceReportPlayer.cpp:202 |SetRptQueryUrl| strRPTQueryURL https://harmony.voice.gcloudsdk.com:443/report_query
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 5, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:8690 |SetTranslateUrl| SetTranslateUrl url:https://api.translator.voice.gcloudsdk.com:443
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 1, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:5313 |SetRegion| GCloudVoiceEngine::SetRegion(Region 156) 
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 7, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| FullLinkQoS.cpp:2022 |Q_SetUrl| Q_SetUrl udp://cdn.cn.gcloudcs.com:18301
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_server_addr.cpp:87 |SetServerAddr| Insert the addr 2, configType 2, addrValue success
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| av_reporter.cpp:62 |SetGQosURL| SetGQosURL url: udp://qosidc.gcloudsdk.com:8011
+07-29 09:35:55.411 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 411] | Error | [GCloudVoice] |13621| cdnv_event_sem.cpp:54 |Post| event 17 too large[24], current free 0
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:3937 |EnableLog| GCloudVoiceEngine::EnableLog true printLogLevelRemote: 0, m_bEnableLogServe:0
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:3959 |EnableLogOnAndroid| EnableLogOnAndroid enable: 1
+07-29 09:35:55.411 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 411] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:3951 |EnableLogOnCS| EnableLogOnCS enable: 1
+07-29 09:35:55.412 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 412] | Info | [GCloudVoice] |13621| RSTTAPISessionMgr.cpp:103 |JavaHTTPInit| call com.gcloudsdk.apollo.apollovoice.httpclient.SRTTAPIHTTPTaskQueue.init()
+07-29 09:35:55.412 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 412] | Error | [GCloudVoice] |13621| av_config.cpp:3099 |GetConfigFromManifest| configValue_jstr is null
+07-29 09:35:55.413 13621 13621 I GCloudCore: GCloudAppLifecycle onStart
+07-29 09:35:55.414 13621 13621 I GCloudCore: genericobserver pos:0 className:com.itop.gcloud.msdk.core.lifecycle.PluginMSDKLifecycle
+07-29 09:35:55.414 13621 13621 I GCloudCore: genericobserver pos:1 className:com.tencent.gcloud.GCloudAppLifecycleListener
+07-29 09:35:55.414 13621 13621 I GCloudCore: genericobserver pos:2 className:com.tdatamaster.tdm.gcloud.lifecycle.PluginReportLifecycle
+07-29 09:35:55.430 13621 13621 I GCloudCore: GCloudAppLifecycle onResume
+07-29 09:35:55.430 13621 13621 I GCloudCore: [2026-07-29 09:35:55 430] | Info | [GCloudCore] |13621| (Application.cpp:127)|OnResume| CApplication::OnResume
+07-29 09:35:55.430 13621 13621 I GCloudCore: genericobserver pos:0 className:com.itop.gcloud.msdk.core.lifecycle.PluginMSDKLifecycle
+07-29 09:35:55.430 13621 13621 I GCloudCore: genericobserver pos:1 className:com.tencent.gcloud.GCloudAppLifecycleListener
+07-29 09:35:55.430 13621 13621 I GCloud  : onResume
+07-29 09:35:55.430 13621 13621 I GCloud  : [2026-07-29 09:35:55 430] | Info | [GCloud] |13621| (GCloud.jni.cpp:203)|Java_com_gsdk_gcloud_GCloud_setAppStatus| SetAppStatus :status:2
+07-29 09:35:55.430 13621 13621 I GCloud  : [2026-07-29 09:35:55 430] | Info | [GCloud] |13621| (GCloud.jni.cpp:214)|Java_com_gsdk_gcloud_GCloud_setAppStatus| SetAppStatus :refresh status:2
+07-29 09:35:55.430 13621 13621 I GCloudCore: genericobserver pos:2 className:com.tdatamaster.tdm.gcloud.lifecycle.PluginReportLifecycle
+07-29 09:35:55.431 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 431] | Info | [GCloudVoice] |13621| GcloudVoiceEngineHelper.cpp:180 |Java_com_gcloudsdk_gcloud_voice_GCloudVoiceEngineHelper_Resume| Java_com_gcloudsdk_gcloud_voice_GCloudVoiceEngineHelper_Resume
+07-29 09:35:55.431 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 431] | Info | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:2098 |Resume| GCloudVoiceEngine::Resume
+07-29 09:35:55.431 13621 13621 E GCloudVoice: [2026-07-29 09:35:55 431] | Error | [GCloudVoice] |13621| GCloudVoiceEngine.cpp:2104 |Resume| you have not Init, please Init first!
+07-29 09:35:55.524 13621 13621 I GCloudCore: [2026-07-29 09:35:55 524] | Info | [GCloudCore] |13621| (:0)|| [[GCloudCore]]handleMessage Main Thread:Thread[MainThread-UE4,5,main]Current Thread:Thread[MainThread-UE4,5,main]
+07-29 09:35:55.524 13621 13621 I GCloudCore: [2026-07-29 09:35:55 524] | Info | [GCloudCore] |13621| (ConfigureImpl.cpp:288)|OnNetworkStateChanged| ANetworkState 2, _state 2
+07-29 09:35:55.526 13621 13621 I GCloud  : handleMessage Main Thread:Thread[MainThread-UE4,5,main]Current Thread:Thread[MainThread-UE4,5,main]
+07-29 09:35:55.535 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 535] | Info | [GCloudVoice] |13621| ApolloVoiceEngineJNI.cpp:236 |Java_com_gcloudsdk_apollo_ApolloVoiceEngine_CompleteAudioRoute| CompleteAudioRoute, nMode=0
+07-29 09:35:55.535 13621 13621 I GCloudVoice: [2026-07-29 09:35:55 535] | Info | [GCloudVoice] |13621| ApolloVoiceEngineJNI.cpp:241 |Java_com_gcloudsdk_apollo_ApolloVoiceEngine_CompleteAudioRoute| ApolloVoiceEngine CompleteAudioRoute mode: 0
+07-29 09:35:55.793 13621 13695 I GCloudCore: [2026-07-29 09:35:55 793] | Info | [GCloudCore] |13695| (:0)|| [URLRequest]url[]response2cpp with result :0
+07-29 09:35:55.793 13621 13695 I GCloudCore: [2026-07-29 09:35:55 793] | Info | [GCloudCore] |13695| (UrlRequest.cpp:395)|Java_com_gcore_abase_URLRequest_nativeResponse| Java_com_apollovoice_httpclient_URLRequest_response result 0
+07-29 09:35:55.793 13621 13695 I GCloudCore: [2026-07-29 09:35:55 793] | Info | [GCloudCore] |13695| (ConfigHttpTaskImp.cpp:97)|OnDataTaskFinished| OnDataTaskFinished error:0, httpStatus:200
+07-29 09:35:55.793 13621 13695 I GCloudCore: [2026-07-29 09:35:55 793] | Info | [GCloudCore] |13695| (ConfigureImpl.cpp:367)|OnDataTaskFinished| OnDataTaskFinished error:0, httpStatus:200, cost time 621 ms, data:{"ret":0,"biz_data":{"rule_id":5714,"merged_cfg":{"APM":{"APM_DISPLAY_LISTENER":"0","APM_SMAPS_INTERVAL":"10000","APM_VM_REGION_FUNC":"0"},"GEM":{"battery":"1","cpu":"1","cpu_cycle":"5000","errmsg":"success","errno":"0","fcntx0":"20","fps":"1","fps_cycle":"5000","frequency":"2000","lfps1":"5","lfps2":"8","lfps3":"15","mem":"1","mode_freq":"1000","netflow":"1","pcntx00":"200","signal_cycle":"5000","sport":"17000","tcp":"www.qq.com:80","udp":"speedsg.warsongmobile.com:17000;speedeu.warsongmobile.com:17000;speedna.warsongmobile.com:17000;speedsa.warsongmobile.com:17000;speedind.warsongmobile.com:17000;","wifi":"0"},"GPMSDK":{"APM_DISPLAY_LISTENER":"0","APM_GCLOUD_INIT_NET_WORK":"10000","APM_REPORT_PERF_COS":"10000","APM_REPORT_PERF_COS_MIN_SIZE_KB":"64","APM_SMAPS_INTERVAL":"10000","APM_THREAD_TIME_OUT_FUNC":"0","APM_VM_REGION_FUNC":"0","errno":"0
+07-29 09:35:55.793 13621 13695 I GCloudCore: ","wifi":"0"},"HttpDNS":{"hdk":"hdk-tGYohQLhX+gfkYFXmyoVJX3AhQz0ffBAYkA0cvCj95E=-BIHsI4Z74locGL295v5nzLVMSEI+epRggayvfKp6EqR4yaJA5X0hLu+DCtMvj/rgBykaslYZMKlPmp7dxoVVhk61/PXl+VkcXpdQheQJKsfzmyEBSAfpsyN4+qZvSO871sx8PX0npkv2knSQpeRdUvWjmrdu2P3Ale3IVzvU9meQHdtserDtcCA1YHwlgKxE"}}},"next_gap":3600}, len:1150
+07-29 09:35:55.793 13621 13695 I GCloudCore: [2026-07-29 09:35:55 793] | Info | [GCloudCore] |13695| (ConfigureImpl.cpp:505)|_ParseJsonObject| ParseJsonObject : {"ret":0,"biz_data":{"rule_id":5714,"merged_cfg":{"APM":{"APM_DISPLAY_LISTENER":"0","APM_SMAPS_INTERVAL":"10000","APM_VM_REGION_FUNC":"0"},"GEM":{"battery":"1","cpu":"1","cpu_cycle":"5000","errmsg":"success","errno":"0","fcntx0":"20","fps":"1","fps_cycle":"5000","frequency":"2000","lfps1":"5","lfps2":"8","lfps3":"15","mem":"1","mode_freq":"1000","netflow":"1","pcntx00":"200","signal_cycle":"5000","sport":"17000","tcp":"www.qq.com:80","udp":"speedsg.warsongmobile.com:17000;speedeu.warsongmobile.com:17000;speedna.warsongmobile.com:17000;speedsa.warsongmobile.com:17000;speedind.warsongmobile.com:17000;","wifi":"0"},"GPMSDK":{"APM_DISPLAY_LISTENER":"0","APM_GCLOUD_INIT_NET_WORK":"10000","APM_REPORT_PERF_COS":"10000","APM_REPORT_PERF_COS_MIN_SIZE_KB":"64","APM_SMAPS_INTERVAL":"10000","APM_THREAD_TIME_OUT_FUNC":"0","APM_VM_REGION_FUNC":"0","errno":"0","wifi":"0"},"HttpDNS":{"hdk":"hdk-tGYohQLhX+gfkYF
+07-29 09:35:55.793 13621 13695 I GCloudCore: XmyoVJX3AhQz0ffBAYkA0cvCj95E=-BIHsI4Z74locGL295v5nzLVMSEI+epRggayvfKp6EqR4yaJA5X0hLu+DCtMvj/rgBykaslYZMKlPmp7dxoVVhk61/PXl+VkcXpdQheQJKsfzmyEBSAfpsyN4+qZvSO871sx8PX0npkv2knSQpeRdUvWjmrdu2P3Ale3IVzvU9meQHdtserDtcCA1YHwlgKxE"}}},"next_gap":3600}
+07-29 09:35:55.794 13621 13695 I GCloudCore: [2026-07-29 09:35:55 794] | Info | [GCloudCore] |13695| (RemoteGameConfig.cpp:104)|SetValues| game value is NULL
+07-29 09:35:55.995 13621 13692 W System.err: 	at com.itop.gcloud.msdk.tools.ThreadUtils$NativeRunnable.nativeCallback(Native Method)
+07-29 09:35:55.995 13621 13692 W System.err: 	at com.itop.gcloud.msdk.tools.ThreadUtils$NativeRunnable.run(SourceFile:17)
+07-29 09:35:55.997 13621 13692 I GCloudCore: [2026-07-29 09:35:55 997] | Info | [GCloudCore] |13692| (GCloudCoreReportService.cpp:62)|CreateEvent| GCloudCoreReportService::CreateEvent, dataType : 3, srcID : 2003, eventName : log
+07-29 09:35:56.062 13621 13695 I GCloudCore: [2026-07-29 09:35:56 062] | Info | [GCloudCore] |13695| (Logger.mm:451)|SetLogLevel| GPMSDK SetLogLevel:2
+07-29 09:35:56.063 13621 13695 I GCloudCore: [2026-07-29 09:35:56 063] | Info | [GCloudCore] |13695| (Logger.mm:458)|SetLogLevel| GPMSDK SetLogLevel finished, final LogLevel:2
+07-29 09:35:56.063 13621 13695 I GCloudCore: [2026-07-29 09:35:56 063] | Info | [GCloudCore] |13695| (GCloudCoreReportService.cpp:62)|CreateEvent| GCloudCoreReportService::CreateEvent, dataType : 2, srcID : 2000, eventName : PullConfigResult
+07-29 09:35:56.448 13621 13692 I GCloudCore: [2026-07-29 09:35:56 448] | Info | [GCloudCore] |13692| (GCloudCoreReportService.cpp:62)|CreateEvent| GCloudCoreReportService::CreateEvent, dataType : 3, srcID : 2003, eventName : http
+07-29 09:35:59.903 13621 13668 I WGGetHostByName: GCloudDns init(com.epicgames.ue4.GameActivity@7766a5f, 500638030) called, timeout:1180, ver:1.3.04.300, revision:b068e52
+07-29 09:35:59.903 13621 13668 I WGGetHostByName: GCloudDns init(com.epicgames.ue4.GameActivity@7766a5f, 500638030) called, timeout:1180, ver:1.3.04.300, revision:b068e52
+07-29 09:35:59.903 13621 13668 I GCloudCore: [2026-07-29 09:35:59 903] | Event | [GCloudCore] |13668| (GCloudCore.cpp:88)|CGCloudCore| OS_TYPE:Android, Version:1.6.04.3581, VersionHash:12e8962c4655e82feecae6f8b168ffb25f55fbbe
+07-29 09:35:59.903 13621 13668 W GCloud  : [2026-07-29 09:35:59 903] | Warning | [GCloud] |13668| (GCloud.cpp:108)|CGCloud| Hello GCloud! OSType:Android, GCloudVersion:2.23.00.1032, GCloudHash:fd05b46bb86f74441b5a070240ec0d01e00a0c08
+07-29 09:35:59.903 13621 13668 I GCloud  : [2026-07-29 09:35:59 903] | Info | [GCloud] |13668| (GCloud.cpp:122)|Initialize| Input gameId:500638030.
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:154)|CGCloudCommon| _OpenPufferAuthUserIdSign[1] 
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:157)|CGCloudCommon| _OpenDolphinServerAuth[1] 
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:160)|CGCloudCommon| _OpenDolphinAuthUserIdSign[1] 
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:203)|CGCloudCommon| _versionConnectBackupMode=[0],_rpcRetryTimes=[0],_cdnConnectTimeout=[10],_versionConnectMethod[0],RpcConnectTimeout[15] RpcRetryIncrement[7] RpcAddressSvrPortList[8085|8080] RpcAddressSvrBkIPList[] RpcConnectMode[0] RpcConnectTdrProto[100] RpcParallelChannels[15] RpcParallelCount[1] MapleConnectorConfig[0]
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:209)|CGCloudCommon| ForceUseIPv6[0] DNSPriority[-1] SNIConfig[0] UseV3NewJarConfig[0] UseSkipListConfig[0]  rewriteChannelIDBeforeRenameAPK[0] _rewriteChannelForceCheckApkDiff[0] _rewriteChannelForceCheckApkFull[1]
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:211)|CGCloudCommon| UseRediretHttpConn[0] UseAvargeCutGap[0] AvargeCutGapSize[0] UseDymaicUpdateMaxTask[0]
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:215)|CGCloudCommon| OptiUseDolphinDefaultConfig[1] DolphinAPKCreateMoreTask[1] OptiCloseAllOptiHttp[0] OptiPollingTime[0] OptiDLMaxSpeed[0] 
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:217)|CGCloudCommon| OptiOpenDynamicAdjustDolphinSpeed[1] OptiDLProtectSpeedStart[0] OptiDLProtectSpeedEnd[0] 
+07-29 09:35:59.904 13621 13668 I GCloud  : [2026-07-29 09:35:59 904] | Info | [GCloud] |13668| (GCloudCommon.cpp:218)|CGCloudCommon| CurlBufferSize[0] 
+07-29 09:35:59.904 13621 13668 I GCloudCore: [2026-07-29 09:35:59 904] | Info | [GCloudCore] |13668| (ConfigFile.cpp:49)|ConfigFile| using GCloud.config
+07-29 09:35:59.905 13621 13668 I GCloud  : [2026-07-29 09:35:59 905] | Info | [GCloud] |13668| (GCloud.cpp:135)|Initialize| Config gameId:500638030.
+07-29 09:35:59.905 13621 13668 I GCloudCore: [2026-07-29 09:35:59 905] | Info | [GCloudCore] |13668| (Logger.mm:451)|SetLogLevel| GCloud SetLogLevel:4
+07-29 09:35:59.905 13621 13668 I GCloudCore: [2026-07-29 09:35:59 905] | Info | [GCloudCore] |13668| (Logger.mm:458)|SetLogLevel| GCloud SetLogLevel finished, final LogLevel:4
+07-29 09:35:59.905 13621 13668 I GCloudCore: [2026-07-29 09:35:59 905] | Info | [GCloudCore] |13668| (Logger.mm:451)|SetLogLevel| GCloudCore SetLogLevel:4
+07-29 09:35:59.905 13621 13668 I GCloudCore: [2026-07-29 09:35:59 905] | Info | [GCloudCore] |13668| (Logger.mm:458)|SetLogLevel| GCloudCore SetLogLevel finished, final LogLevel:4
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.200 13621 13631 W System  : A resource failed to call close. 
+07-29 09:36:00.277 13621 13668 E GCloud  : [2026-07-29 09:36:00 277] | Error | [GCloud] |13668| (puffer_download_action.cpp:52)|CPufferDownloadAction| use dns mode type 1
+07-29 09:36:00.277 13621 13881 E GCloud  : [2026-07-29 09:36:00 277] | Error | [GCloud] |13881| (puffer_init_action.cpp:140)|DoInitCloudConfig| use dns mode type 1
+07-29 09:36:00.277 13621 13881 E GCloud  : [2026-07-29 09:36:00 277] | Error | [GCloud] |13881| (HttpNetwork.cpp:57)|set_http_curl_buffersize| set_http_curl_buffersize = 15360
+07-29 09:36:00.278 13621 13881 E GCloud  : [2026-07-29 09:36:00 278] | Error | [GCloud] |13881| (puffer_init_action.cpp:248)|MakeSureDirUseFull| dir is usefull /data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Puffer
+07-29 09:36:00.278 13621 13881 E GCloud  : [2026-07-29 09:36:00 278] | Error | [GCloud] |13881| (puffer_init_action.cpp:248)|MakeSureDirUseFull| dir is usefull /data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Puffer
+07-29 09:36:00.278 13621 13881 E GCloud  : [2026-07-29 09:36:00 278] | Error | [GCloud] |13881| (puffer_init_action.cpp:248)|MakeSureDirUseFull| dir is usefull /data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Puffer/puffer_temp
+07-29 09:36:05.499 13621 13883 E GCloud  : [2026-07-29 09:36:05 499] | Error | [GCloud] |13883| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb40000774354a6d0]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://180.102.99.93:8085, ip:180.102.99.93
+07-29 09:36:05.532 13621 13882 E GCloud  : [2026-07-29 09:36:05 532] | Error | [GCloud] |13882| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb40000774354a6e8 connect failed! result:204.-10.0
+07-29 09:36:07.564 13621 13883 E GCloud  : [2026-07-29 09:36:07 564] | Error | [GCloud] |13883| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb40000774351f920]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://121.229.93.65:8085, ip:121.229.93.65
+07-29 09:36:07.597 13621 13883 E GCloud  : [2026-07-29 09:36:07 597] | Error | [GCloud] |13883| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb40000774351f938 connect failed! result:204.-10.0
+07-29 09:36:09.407 13621 13668 E GCloud  : [2026-07-29 09:36:09 407] | Error | [GCloud] |13668| (version_mgr_imp.cpp:77)|Init| UsrConfig[{
+07-29 09:36:09.407 13621 13668 E GCloud  :    "User_Data" : "",
+07-29 09:36:09.407 13621 13668 E GCloud  :    "apollo_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 09:36:09.407 13621 13668 E GCloud  :    "basic_diffupdata" : {
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_apk_abspath" : "/data/app/~~z5U_1No7fsqc2cvRy8qEGg==/com.tencent.tmgp.dfm-Nf1dCMMvHQh9ID_8z4SZJg==/base.apk",
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_diff_config_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_diff_temp_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_enable_apk_diff" : true,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_max_dl_per_task" : 3,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_max_dl_task" : 6,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_min_dl_gap_size" : 262144,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_nMaxDownloadSpeed" : 104857600
+07-29 09:36:09.407 13621 13668 E GCloud  :    },
+07-29 09:36:09.407 13621 13668 E GCloud  :    "basic_version" : {
+07-29 09:36:09.407 13621 13668 E GCloud  :       "app_identity_key" : "",
+07-29 09:36:09.407 13621 13668 E GCloud  :       "auth_user_id" : "",
+07-29 09:36:09.407 13621 13668 E GCloud  :       "cdn_version_url" : null,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "cpu_arch_type" : 0,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "gcloud_service_id" : 1002951,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "mVersionGetMode" : 1,
+07-29 09:36:09.407 13621 13668 E GCloud  :       "m_cur_app_version_str" : "1.201.37114.0",
+07-29 09:36:09.407 13621 13668 E GCloud  :       
+07-29 09:36:09.408 13621 13668 E GCloud  : "m_cur_src_version_str" : "1.201.37114.47",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_enable_cdn_getversion" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_server_url_list" : [ "download.500638030-1-1.gcloudsvcs.com" ],
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_skip_version_srv" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_u32GetChannelConfig" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_version_json_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_version_url_list" : null,
+07-29 09:36:09.408 13621 13668 E GCloud  :       "moa_token" : "",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "msdk_auth_token" : "",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "msdk_channel_id" : 0
+07-29 09:36:09.408 13621 13668 E GCloud  :    },
+07-29 09:36:09.408 13621 13668 E GCloud  :    "connector_type" : 2,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "dns_mode_type" : 1,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "dolphin_engine_type" : 1,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "enable_sni" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "log_debug" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "log_error" : true,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "log_save_path" : "/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81",
+07-29 09:36:09.408 13621 13668 E GCloud  :    "m_update_type" : 20,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "max_concurrent_streams" : 1,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "predownload_config" : {
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_cur_app_version_str" : "1.201.37114.0",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_cur_sdcard_path" : "",
+07-29 09:36:09.408 13621 13668 E GCloud  :       "m_cur_src_version_str" : "1.201.37114.47"
+07-29 09:36:09.408 13621 13668 E GCloud  :    },
+07-29 09:36:09.408 13621 13668 E GCloud  :    "use_launcher_mode" : false,
+07-29 09:36:09.408 13621 13668 E GCloud  :    "use_qts" : false
+07-29 09:36:09.408 13621 13668 E GCloud  : }
+07-29 09:36:09.408 13621 13668 E GCloud  : ]
+07-29 09:36:09.409 13621 13668 E GCloud  : [2026-07-29 09:36:09 409] | Error | [GCloud] |13668| (action_factory.cpp:221)|init| use Qts:[0]
+07-29 09:36:09.409 13621 13668 E GCloud  : [2026-07-29 09:36:09 409] | Error | [GCloud] |13668| (action_factory.cpp:278)|init| User_Data=
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (action_factory.cpp:297)|init| apollopath=/storage/emulated/0/Android/data/com.tencent.tmgp.dfm/files/App.1.201.37114.81
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (patchdiff_paser_json.cpp:351)|get_vector_hashcode_from_json| Failed to open file [/fix_list.json]
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (gcloud_version_config.h:260)|load| get_vector_hashcode_from_json[] failed!
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (gcloud_version_config.h:134)|dump| mVersionGetMode=[1]
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (action_factory.cpp:438)|init| connector_type=2
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (action_factory.cpp:444)|init| dns_mode_type=1
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (action_factory.cpp:346)|init| dolphin_engine_type=1
+07-29 09:36:09.410 13621 13668 E GCloud  : [2026-07-29 09:36:09 410] | Error | [GCloud] |13668| (action_factory.cpp:340)|init| m_bEnable_sni=0
+07-29 09:36:09.411 13621 13668 E GCloud  : [2026-07-29 09:36:09 411] | Error | [GCloud] |13668| (action_factory.cpp:268)|init| m_update_type=20
+07-29 09:36:09.411 13621 13668 E GCloud  : [2026-07-29 09:36:09 411] | Error | [GCloud] |13668| (action_factory.cpp:351)|init| max_concurrent_streams_=1
+07-29 09:36:09.411 13621 13668 E GCloud  : [2026-07-29 09:36:09 411] | Error | [GCloud] |13668| (action_factory.cpp:450)|init| use_launcher_mode=0
+07-29 09:36:09.411 13621 13668 E GCloud  : [2026-07-29 09:36:09 411] | Error | [GCloud] |13668| (action_factory.cpp:290)|init| use Qts:[0]
+07-29 09:36:09.411 13621 13668 E GCloud  : [2026-07-29 09:36:09 411] | Error | [GCloud] |13668| (HttpNetwork.cpp:57)|set_http_curl_buffersize| set_http_curl_buffersize = 15360
+07-29 09:36:09.413 13621 13668 E GCloud  : [2026-07-29 09:36:09 413] | Error | [GCloud] |13668| (GcloudDolphinVersionAction.cpp:82)|DoAction| use connect type = 2
+07-29 09:36:09.413 13621 13668 E GCloud  : [2026-07-29 09:36:09 413] | Error | [GCloud] |13668| (GcloudDolphinVersionAction.cpp:87)|DoAction| use dns mode type 1
+07-29 09:36:09.413 13621 13951 E GCloud  : [2026-07-29 09:36:09 413] | Error | [GCloud] |13951| (GcloudDolphinVersionAction.cpp:220)|NormalConnectVersionSvr| NormalConnectVersionSvr Start...
+07-29 09:36:09.666 13621 13951 E GCloud  : [2026-07-29 09:36:09 666] | Error | [GCloud] |13951| (GcloudDolphinVersionAction.cpp:469)|NormalConnectVersionSvr| Normal Version spend time:[253]
+07-29 09:36:09.669 13621 13951 E GCloud  : [2026-07-29 09:36:09 669] | Error | [GCloud] |13951| (GcloudDolphinVersionAction.cpp:471)|NormalConnectVersionSvr| NormalConnectVersionSvr End...
+07-29 09:36:09.669 13621 13951 E GCloud  : [2026-07-29 09:36:09 669] | Error | [GCloud] |13951| (GcloudDolphinVersionAction.cpp:2144)|GetConfigUrls| GetConfigUrls failed.[url:] [addr:] [addr2:]
+07-29 09:36:09.672 13621 13951 E GCloud  : [2026-07-29 09:36:09 672] | Error | [GCloud] |13951| (GcloudDolphinVersionAction.cpp:216)|run| Run compelete!...
+07-29 09:36:09.790 13621 13668 E GCloud  : [2026-07-29 09:36:09 790] | Error | [GCloud] |13668| (gcloud_client_data_report.cpp:68)|StartReport| TDM report over!
+07-29 09:36:09.790 13621 13668 E GCloud  : [2026-07-29 09:36:09 790] | Error | [GCloud] |13668| (action_mgr.cpp:602)|OnReportFinish| OnReport data Finish!
+07-29 09:36:09.793 13621 13668 E GCloud  : [2026-07-29 09:36:09 793] | Error | [GCloud] |13668| (DownloadProcess.cpp:69)|GCloudSetDynamicDownloadMaxSpeed| opti final speed:104857600
+07-29 09:36:09.830 13621 13668 E GCloud  : [2026-07-29 09:36:09 830] | Error | [GCloud] |13668| (version_mgr_imp.cpp:77)|Init| UsrConfig[{
+07-29 09:36:09.830 13621 13668 E GCloud  :    "User_Data" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :    "apollo_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 09:36:09.830 13621 13668 E GCloud  :    "basic_version" : {
+07-29 09:36:09.830 13621 13668 E GCloud  :       "app_identity_key" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "auth_user_id" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "cdn_version_url" : null,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "cpu_arch_type" : 0,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "gcloud_service_id" : 1002951,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "mVersionGetMode" : 1,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_cur_app_version_str" : "1.201.37114.0",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_cur_src_version_str" : "1.201.37114.47",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_enable_cdn_getversion" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_server_url_list" : [ "download.500638030-1-1.gcloudsvcs.com" ],
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_skip_version_srv" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_u32GetChannelConfig" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_version_json_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_version_url_list" : null,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "moa_token" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "msdk_auth_token" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "msdk_channel_id" : 0
+07-29 09:36:09.830 13621 13668 E GCloud  :    },
+07-29 09:36:09.830 13621 13668 E GCloud  :    "connector_type" : 2,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "dn
+07-29 09:36:09.830 13621 13668 E GCloud  : s_mode_type" : 1,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "dolphin_engine_type" : 1,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "enable_sni" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "full_diff" : {
+07-29 09:36:09.830 13621 13668 E GCloud  :       "UseDiffFlist" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "dolphin_imp_type" : 0,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "dolphin_split_update_mode" : 0,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "enable_clear_after_extract" : true,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "enable_ios_bgdownload" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "enable_remove_invalid_filelist" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "filelist_info_json_file_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81/user_filelist.json",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_file_extract_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_ifs_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_max_dl_per_task" : 3,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_max_dl_task" : 6,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_min_dl_gap_size" : 262144,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "merge_filelist_type" : 1,
+07-29 09:36:09.830 13621 13668 E GCloud  :       "notice_extract" : false
+07-29 09:36:09.830 13621 13668 E GCloud  :    },
+07-29 09:36:09.830 13621 13668 E GCloud  :    "log_debug" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "log_error" : true,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "log_save_path" : "/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/D
+07-29 09:36:09.830 13621 13668 E GCloud  : eltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81",
+07-29 09:36:09.830 13621 13668 E GCloud  :    "m_update_type" : 21,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "max_concurrent_streams" : 1,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "predownload_config" : {
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_cur_app_version_str" : "1.201.37114.0",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_cur_sdcard_path" : "",
+07-29 09:36:09.830 13621 13668 E GCloud  :       "m_cur_src_version_str" : "1.201.37114.47"
+07-29 09:36:09.830 13621 13668 E GCloud  :    },
+07-29 09:36:09.830 13621 13668 E GCloud  :    "use_launcher_mode" : false,
+07-29 09:36:09.830 13621 13668 E GCloud  :    "use_qts" : false
+07-29 09:36:09.830 13621 13668 E GCloud  : }
+07-29 09:36:09.830 13621 13668 E GCloud  : ]
+07-29 09:36:09.830 13621 13668 E GCloud  : [2026-07-29 09:36:09 830] | Error | [GCloud] |13668| (action_factory.cpp:221)|init| use Qts:[0]
+07-29 09:36:09.830 13621 13668 E GCloud  : [2026-07-29 09:36:09 830] | Error | [GCloud] |13668| (action_factory.cpp:278)|init| User_Data=
+07-29 09:36:09.830 13621 13668 E GCloud  : [2026-07-29 09:36:09 830] | Error | [GCloud] |13668| (action_factory.cpp:297)|init| apollopath=/data/user/0/com.tencent.tmgp.dfm/files/UE4Game/DeltaForce/DeltaForce/Saved/Dolphin/1.201.37114.81
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (patchdiff_paser_json.cpp:351)|get_vector_hashcode_from_json| Failed to open file [/fix_list.json]
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (gcloud_version_config.h:260)|load| get_vector_hashcode_from_json[] failed!
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (gcloud_version_config.h:134)|dump| mVersionGetMode=[1]
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:438)|init| connector_type=2
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:444)|init| dns_mode_type=1
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:346)|init| dolphin_engine_type=1
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:340)|init| m_bEnable_sni=0
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:268)|init| m_update_type=21
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:351)|init| max_concurrent_streams_=1
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:450)|init| use_launcher_mode=0
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (action_factory.cpp:290)|init| use Qts:[0]
+07-29 09:36:09.831 13621 13668 E GCloud  : [2026-07-29 09:36:09 831] | Error | [GCloud] |13668| (HttpNetwork.cpp:57)|set_http_curl_buffersize| set_http_curl_buffersize = 15360
+07-29 09:36:09.833 13621 13668 E GCloud  : [2026-07-29 09:36:09 833] | Error | [GCloud] |13668| (GcloudDolphinVersionAction.cpp:82)|DoAction| use connect type = 2
+07-29 09:36:09.833 13621 13668 E GCloud  : [2026-07-29 09:36:09 833] | Error | [GCloud] |13668| (GcloudDolphinVersionAction.cpp:87)|DoAction| use dns mode type 1
+07-29 09:36:09.833 13621 13952 E GCloud  : [2026-07-29 09:36:09 833] | Error | [GCloud] |13952| (GcloudDolphinVersionAction.cpp:220)|NormalConnectVersionSvr| NormalConnectVersionSvr Start...
+07-29 09:36:10.076 13621 13952 E GCloud  : [2026-07-29 09:36:10 076] | Error | [GCloud] |13952| (GcloudDolphinVersionAction.cpp:469)|NormalConnectVersionSvr| Normal Version spend time:[243]
+07-29 09:36:10.076 13621 13952 E GCloud  : [2026-07-29 09:36:10 076] | Error | [GCloud] |13952| (GcloudDolphinVersionAction.cpp:471)|NormalConnectVersionSvr| NormalConnectVersionSvr End...
+07-29 09:36:10.076 13621 13952 E GCloud  : [2026-07-29 09:36:10 076] | Error | [GCloud] |13952| (GcloudDolphinVersionAction.cpp:2144)|GetConfigUrls| GetConfigUrls failed.[url:] [addr:] [addr2:]
+07-29 09:36:10.076 13621 13952 E GCloud  : [2026-07-29 09:36:10 076] | Error | [GCloud] |13952| (GcloudDolphinVersionAction.cpp:216)|run| Run compelete!...
+07-29 09:36:10.163 13621 13668 E GCloud  : [2026-07-29 09:36:10 163] | Error | [GCloud] |13668| (gcloud_client_data_report.cpp:68)|StartReport| TDM report over!
+07-29 09:36:10.163 13621 13668 E GCloud  : [2026-07-29 09:36:10 163] | Error | [GCloud] |13668| (action_mgr.cpp:602)|OnReportFinish| OnReport data Finish!
+07-29 09:36:10.164 13621 13668 E GCloud  : [2026-07-29 09:36:10 164] | Error | [GCloud] |13668| (DownloadProcess.cpp:69)|GCloudSetDynamicDownloadMaxSpeed| opti final speed:104857600
+07-29 09:36:12.691 13621 13883 E GCloud  : [2026-07-29 09:36:12 691] | Error | [GCloud] |13883| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb40000774351f920]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://180.102.99.93:8085, ip:180.102.99.93
+07-29 09:36:12.724 13621 13882 E GCloud  : [2026-07-29 09:36:12 724] | Error | [GCloud] |13882| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb40000774351f938 connect failed! result:204.-10.0
+07-29 09:36:14.682 13621 13882 E GCloud  : [2026-07-29 09:36:14 682] | Error | [GCloud] |13882| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743744110]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://121.229.93.65:8085, ip:121.229.93.65
+07-29 09:36:14.716 13621 13883 E GCloud  : [2026-07-29 09:36:14 716] | Error | [GCloud] |13883| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743744128 connect failed! result:204.-10.0
+07-29 09:36:19.765 13621 13882 E GCloud  : [2026-07-29 09:36:19 765] | Error | [GCloud] |13882| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743744110]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://180.102.99.93:8085, ip:180.102.99.93
+07-29 09:36:19.798 13621 13883 E GCloud  : [2026-07-29 09:36:19 798] | Error | [GCloud] |13883| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743744128 connect failed! result:204.-10.0
+07-29 09:36:20.283 13621 13881 E GCloud  : [2026-07-29 09:36:20 283] | Error | [GCloud] |13881| (puffer_init_action.cpp:838)|MakeSureGetUrlFromServer| connect server timeout
+07-29 09:36:25.415 13621 13882 E GCloud  : [2026-07-29 09:36:25 415] | Error | [GCloud] |13882| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743870dd0]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://101.227.164.186:8085, ip:101.227.164.186
+07-29 09:36:25.448 13621 13882 E GCloud  : [2026-07-29 09:36:25 448] | Error | [GCloud] |13882| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743870de8 connect failed! result:204.-10.0
+07-29 09:36:27.435 13621 13882 E GCloud  : [2026-07-29 09:36:27 435] | Error | [GCloud] |13882| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743527a80]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://101.226.147.204:8085, ip:101.226.147.204
+07-29 09:36:27.468 13621 13882 E GCloud  : [2026-07-29 09:36:27 468] | Error | [GCloud] |13882| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743527a98 connect failed! result:204.-10.0
+07-29 09:36:32.535 13621 13882 E GCloud  : [2026-07-29 09:36:32 535] | Error | [GCloud] |13882| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743527a80]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://101.227.164.186:8085, ip:101.227.164.186
+07-29 09:36:32.568 13621 13882 E GCloud  : [2026-07-29 09:36:32 568] | Error | [GCloud] |13882| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743527a98 connect failed! result:204.-10.0
+07-29 09:36:34.553 13621 13883 E GCloud  : [2026-07-29 09:36:34 553] | Error | [GCloud] |13883| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743876410]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://101.226.147.204:8085, ip:101.226.147.204
+07-29 09:36:34.586 13621 13883 E GCloud  : [2026-07-29 09:36:34 586] | Error | [GCloud] |13883| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743876428 connect failed! result:204.-10.0
+07-29 09:36:39.630 13621 13883 E GCloud  : [2026-07-29 09:36:39 630] | Error | [GCloud] |13883| (UAPConnector_Update.cpp:82)|innerUpdate| [UAPConnector:0xb400007743876410]: tuap_api_update ret:-10, reason:connection has been closed by peer side, network:2, url:tcp://101.227.164.186:8085, ip:101.227.164.186
+07-29 09:36:39.668 13621 13883 E GCloud  : [2026-07-29 09:36:39 668] | Error | [GCloud] |13883| (UAConnection.cpp:825)|OnConnectProc| [callback] connector:0xb400007743876428 connect failed! result:204.-10.0
+07-29 09:36:40.288 13621 13881 E GCloud  : [2026-07-29 09:36:40 288] | Error | [GCloud] |13881| (puffer_init_action.cpp:838)|MakeSureGetUrlFromServer| connect server timeout
+07-29 09:36:40.288 13621 13881 E GCloud  : [2026-07-29 09:36:40 288] | Error | [GCloud] |13881| (puffer_init_action.cpp:118)|run| [CPufferInitAction::run] get url from server failed 70254639
+07-29 09:36:40.288 13621 13881 E GCloud  : [2026-07-29 09:36:40 288] | Error | [GCloud] |13881| (puffer_init_action.cpp:207)|DoInitActionFailed| Puffer init failed, error code:70254639
